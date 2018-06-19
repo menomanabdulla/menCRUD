@@ -1,0 +1,17 @@
+{
+  "name": "mencrud",
+  "version": "1.0.0",
+  "description": "node express mongo crud app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "noman abdulla",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.10",
+    "nodemon": "^1.17.5"
+  }
+}
