@@ -26,7 +26,7 @@ app.post('/ui',(req,res) => {
 app.get('/',(req,res)=>{
     db.collection('quotes').find().toArray((err,result)=>{
        if(err) return console.log(err)
-       //res.render('index.ejs',{quotes:result})
+       res.render('index.ejs',{quotes:result})
     })
 })
 
