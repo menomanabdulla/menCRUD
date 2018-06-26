@@ -10,8 +10,8 @@ MongoClient.connect('mongodb://menomanabdulla:noman123321BAPPY@ds261660.mlab.com
     if(err) return console.log(err)
     db = client.db('star-wars-talk')
 
-    app.listen(3000,()=>{
-        console.log('listening on 3000')
+    app.listen(3001,()=>{
+        console.log('listening on 3001')
     })
 })
 
@@ -35,7 +35,7 @@ app.post('/quotes', (req, res) => {
     db.collection('quotes').save(req.body,(err,result)=>{
         if(err) return console.log(err)
 
-        console.log('Saved to database')
+        console.log('Successfully Saved to database')
 
         res.redirect('/')
     })
